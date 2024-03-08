@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 
 <sdf version="1.9">
-  <world name="nbpark">
+  <world name="nbpark_follow">
 
     <physics name="4ms" type="dart">
       <max_step_size>0.004</max_step_size>
@@ -353,8 +353,13 @@
     </include>
 
     <include>
-      <uri>model://short_navigation_course_0</uri>
-      <pose> -183 1088 0 0 0 -1.44</pose>
+      <uri> model://roboboat_navigation_channel</uri>
+      <pose> -200 1050 0 0 0 1.4</pose>
+    </include>
+
+    <include>
+      <uri>model://short_navigation_course_1</uri>
+      <pose> -200 1088 0 0 0 1.44</pose>
     </include>
 
     <!-- RoboBoat 01 -->
